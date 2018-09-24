@@ -11,9 +11,11 @@ public class MyRunnable implements Runnable
 	{
 	      greeting = aGreeting;
 	}
+	public MyRunnable() {}
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
+		/*
 		try {
 	         for(int i=1 ; i <= REPETITIONS; i++) {
 	        	 Date now = new Date();
@@ -25,6 +27,19 @@ public class MyRunnable implements Runnable
 		catch(InterruptedException exception) {
 			
 		}
+		*/
+	      try
+	      { 
+	         System.out.println(1);
+	         Thread.sleep(1000);
+	         System.out.println(2);
+	      }
+	      catch (InterruptedException exception) 
+	      {
+	         System.out.println(3);
+	      }
+	      System.out.println(4);
+	      
 		
 		
 	}
